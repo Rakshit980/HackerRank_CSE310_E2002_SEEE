@@ -1,21 +1,24 @@
-import java.io.*;
-import java.util.*;
+John has got a Mathematical assignment where he has to find mean of a given set of 3 integers. Write a Java program solution to help John .
 
-public class Solution {
+Input Format
 
-    public static void main(String[] args) {
-          float a,b,c;
-        Scanner scan = new Scanner(System.in);
-        a = scan.nextFloat();
-        b = scan.nextFloat();
-        c = scan.nextFloat();
-        float d = (a+b+c)/3;
-        double value = d;
-        int decimalpoint = 1;
-        value = value * Math.pow(10, decimalpoint);
-        value = Math.floor(value);
-        value = value / Math.pow(10, decimalpoint);
-        System.out.println(value);
-        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
-    }
-}
+First line will accept 3 positive intergers
+
+Constraints
+
+All positive integers must be > 1 And < 1000
+
+Output Format
+
+mean of 3 integer values
+
+if the Result is an integer ,then write .0 For Examle result is 5 then ans will be 5.0
+
+if the Result is an decimal value,then After point(.) only one digit required for example 6.3 ,2.7 etc
+
+Sample Input 0
+
+5 7 2
+Sample Output 0
+
+4.6
