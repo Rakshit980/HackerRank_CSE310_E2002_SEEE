@@ -1,39 +1,28 @@
-import java.io.*;
+Write a program to take the 2 inputs of integer type from the user. Display the values separated by symbol ‘-’ if the values are positive otherwise display the message “Invalid Input”.
 
-import java.util.*;
+Input Format
 
-public class Solution {
+Your program should take at least 2 inputs of integer type.
 
-    public static void main(String[] args) {
+Constraints
 
-        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+Input should be positive integers
 
-        int a,b;
+Output Format
 
-        Scanner scan = new Scanner(System.in);
+Output should be the input values separated by ‘-‘ or “Invalid Input” message if any input is negative.
 
-        a = scan.nextInt();
+Sample Input 0
 
-        b = scan.nextInt();
+10
+2
+Sample Output 0
 
-        if (a>0 && b>0)
+10-2
+Sample Input 1
 
-        {
+20
+-10
+Sample Output 1
 
-            System.out.println(a+"-"+b);
-
-        }
-
-        else
-
-        {
-
-            System.out.println("Invalid Input");
-
-        }
-
-    }
-
-}
-
-    
+Invalid Input
